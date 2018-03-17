@@ -1,9 +1,30 @@
-.large{
-    height: 200px;
-    width: 200px;
+body{
+    background-color: #8B008B;
+    font: inherit;
+    color: white;
+    text-transform: uppercase;
 }
 
-.normal{
-    height: 100px;
-    width: 100px;
+.main{
+    margin: 0 auto;
+}
+
+label{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+}
+
+.button{
+    text-align: center;
+}
+
+button{
+    outline: none;
+}
+
+.list{
+    font-size: 0.7rem;
 }

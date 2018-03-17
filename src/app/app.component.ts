@@ -6,25 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  userName = 'Ram Prasath';
-  imageStyle = 'normal';
+  m1: number;
+  m2: number;
+  m3: number;
+  result: number;
+  currentDate = new Date();
+  typesOfResult = ['Poor','Good','Excellent','Outstanding'];
 
-  constructor(){
-    console.log('App Component is created.');
-  }
-
-  ngOnInit(){
-    console.log('App Component is initialized.');
-  }
-
-  imageClick(){
-    console.log('Image Clicked');
-    if(this.imageStyle === 'normal'){
-      this.imageStyle = 'large';
-    }
-    else{
-      this.imageStyle = 'normal';
-    }
+  sum(){
+    this.result = (this.m1 ? this.m1 : 0) + (this.m2 ? this.m2 : 0) + (this.m3 ? this.m3 : 0);
   }
 }
