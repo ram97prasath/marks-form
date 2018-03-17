@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   userName = 'Ram Prasath';
+  imageStyle = 'normal';
 
   constructor(){
     console.log('App Component is created.');
@@ -19,5 +20,11 @@ export class AppComponent {
 
   imageClick(){
     console.log('Image Clicked');
+    if(this.imageStyle === 'normal'){
+      this.imageStyle = 'large';
+    }
+    else{
+      this.imageStyle = 'normal';
+    }
   }
 }
