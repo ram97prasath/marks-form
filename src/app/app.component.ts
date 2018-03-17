@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  userName = 'Ram Prasath';
+
+  constructor(){
+    console.log('App Component is created.');
+  }
+
+  ngOnInit(){
+    console.log('App Component is initialized.');
+  }
+
+  imageClick(){
+    console.log('Image Clicked');
+  }
 }
