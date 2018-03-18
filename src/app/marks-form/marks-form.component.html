@@ -1,0 +1,37 @@
+<table width="100%" border="0" style="height:100%;position:absolute;">
+  <tr>
+    <td align="center" height="100%">
+      <div class="main">
+        <h2>This is a form for <a routerLink="/user">{{userService.userName}}</a></h2>
+        <label>Enter Username</label><br>
+        <input type="text" [(ngModel)]="newUserName"/><br>
+      
+        <label for="m1">Mark 1</label><br>
+        <input type="number" [(ngModel)]="m1" name="m1"/><br>
+      
+        <label for="m2">Mark 2</label><br>
+        <input type="number" [(ngModel)]="m2" name="m2"/><br>
+      
+        <label for="m3">Mark 3</label><br>
+        <input type="number" [(ngModel)]="m3" name="m3"/><br>
+      
+        <div class="button">
+          <button (click)="sum()">CALCULATE TOTAL</button><br>
+        </div>
+
+        <div *ngIf="result">
+          The result is {{result}}
+        </div>
+      
+        <h2>Result Types</h2>
+        <div *ngFor="let type of typesOfResult" class="list">
+          {{type}}
+        </div>
+      
+        <h2>Date</h2>
+        Today is {{currentDate}}.
+        Today is {{currentDate | date: "MM/DD/YY"}}
+      </div>
+    </td>
+  </tr>
+</table>
